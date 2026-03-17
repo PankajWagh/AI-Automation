@@ -1,8 +1,10 @@
 import os
+import streamlit as st
 from langchain_openai import ChatOpenAI
 
 st.title("AI Resume Analyzer")
 
+#openai_api_key = st.text_input("Enter OpenAI API Key", type="password")
 openai_api_key = os.getenv("OPENAI_API_KEY")
 resume_file = st.file_uploader("Upload Resume (PDF)", type="pdf")
 job_desc = st.text_area("Paste Job Description")
@@ -26,6 +28,7 @@ if resume_file and job_desc and openai_api_key:
     Compare the following resume with the job description.
     Provide:
     - Match score (0-100%)
+    - Match skills/keywords
     - Missing skills/keywords
     - Suggestions for improvement
 
