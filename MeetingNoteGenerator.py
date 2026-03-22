@@ -4,7 +4,6 @@ from langchain_openai import ChatOpenAI
 
 st.title("AI Meeting Notes Generator")
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
 meeting_text = st.text_area("Paste Meeting Transcript")
 
 if meeting_text and openai_api_key:
