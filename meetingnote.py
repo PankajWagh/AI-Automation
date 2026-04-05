@@ -15,8 +15,11 @@ if meeting_text :
     Summarize the following transcript into:
     - Meeting Summary
     - Key Decisions
+        - Reminders
+        - Risks 
+        - Pending Approvals
     - Action Items (with assignees if mentioned)
-
+    - Team Members 
     Transcript:
     {meeting_text}
     """

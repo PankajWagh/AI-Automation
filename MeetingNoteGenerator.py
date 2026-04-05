@@ -15,7 +15,9 @@ if meeting_text and openai_api_key:
     - Meeting Summary
     - Key Decisions
     - Action Items (with assignees if mentioned)
-
+    - Reminders
+    - Risks 
+    - Pending Approvals
     Transcript:
     {meeting_text}
     """
